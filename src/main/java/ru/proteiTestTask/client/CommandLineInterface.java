@@ -90,7 +90,7 @@ public class CommandLineInterface {
 	}
 
 	private void printResponse(JSONObject response, boolean definition, boolean words) {
-		System.out.println("From server: " + response.get("ResultCode"));
+		System.out.println("From server: " + response.get("answer"));
 		if (definition && response.get("ResultCode").equals("OK")) {
 			System.out.println("Definition: " + response.get("definition"));
 		}
